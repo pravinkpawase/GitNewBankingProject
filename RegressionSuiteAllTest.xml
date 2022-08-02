@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SuiteRegressionSuiteAllTest">
+<listeners>
+<listener class-name="com.qa.utility.ListenersSetup"/>
+<listener class-name="com.qa.utility.ExtentReporterNG"/>
+</listeners>
+<parameter name="browser" value="chrome" />
+  <test thread-count="5" name="TestRegressionSuiteAllTest">
+    <classes>
+      
+      <class name="com.qa.testLayer.TreadingTest"/>
+      <class name="com.qa.testLayer.SellingTest"/>
+       <class name="com.qa.testLayer.LoginPageTest"/>
+      <class name="com.qa.testLayer.LoginLogoutPageTest"/>
+     
+    </classes>
+  </test> <!-- TestRegressionSuiteAllTest -->
+</suite> <!-- SuiteRegressionSuiteAllTest -->
